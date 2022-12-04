@@ -1,0 +1,99 @@
+@use 'config';
+@use 'reset';
+
+html{
+  font-family: config.$global-font;
+}
+
+body{
+  background-color: config.$absence-of-light;
+  @include config.flex-column;
+}
+
+.container{
+  width: 90%;
+  @include config.flex-column;
+  
+  h1 {
+    padding: 70px 0 30px;
+    color: config.$purple-gunsmoke;
+    @include config.heading-m;
+  }
+  
+  .password__box{
+    width: 100%;
+    position: relative;
+    
+    &-text{
+      height: 4rem;
+      width: 100%;
+      max-height: 4rem;
+      color: config.$lilac-murmur;
+      background-color: config.$black-russian;
+      @include config.heading-m;
+
+      .text{
+        padding: 15px;
+      }
+    }
+
+    &-icon{
+      width: 100%;
+      position: absolute;
+      color: config.$lilac-murmur;
+    }
+  }
+
+  .password__assets{
+    width: 100%;
+    margin-top: 35px;
+    height: 570px;
+    background-color: config.$black-russian;
+  
+    .form{
+  
+      &__header{
+        padding: 3rem 5% 0;
+        @include config.flex-row;
+        @include config.heading-m;
+        
+        h3{
+          color: config.$lilac-murmur;
+        }
+    
+        span{
+          color: config.$synthetic-mint;
+          font-size: 40px;
+        }
+      }
+      
+      input[type="range"] {
+        margin-right: 15px;
+        width: 200px;
+        height: 7px;
+        background: rgba(255, 255, 255, 0.6);
+        border-radius: 5px;
+        background-image: linear-gradient(#ff4500, #ff4500);
+        background-size: 70% 100%;
+        background-repeat: no-repeat;
+      }
+
+      &__settings{
+        @include config.flex-column;
+        
+        .setting{
+          @include config.flex-row;
+        }
+      }
+      
+    }
+  }
+
+}
+
+
+
+
+
+
+

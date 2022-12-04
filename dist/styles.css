@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700;1,800&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-family: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: rgb(8, 7, 11);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container h1 {
+  padding: 70px 0 30px;
+  color: hsl(251deg, 9%, 53%);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+.container .password__box {
+  width: 100%;
+  position: relative;
+}
+.container .password__box-text {
+  height: 4rem;
+  width: 100%;
+  max-height: 4rem;
+  color: hsl(252deg, 11%, 91%);
+  background-color: hsl(248deg, 10%, 15%);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+.container .password__box-text .text {
+  padding: 15px;
+}
+.container .password__box-icon {
+  width: 100%;
+  position: absolute;
+  color: hsl(252deg, 11%, 91%);
+}
+.container .password__assets {
+  width: 100%;
+  margin-top: 35px;
+  height: 570px;
+  background-color: hsl(248deg, 10%, 15%);
+}
+.container .password__assets .form__header {
+  padding: 3rem 5% 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+.container .password__assets .form__header h3 {
+  color: hsl(252deg, 11%, 91%);
+}
+.container .password__assets .form__header span {
+  color: hsl(127deg, 100%, 82%);
+  font-size: 40px;
+}
+.container .password__assets .form input[type=range] {
+  margin-right: 15px;
+  width: 200px;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  background-image: linear-gradient(#ff4500, #ff4500);
+  background-size: 70% 100%;
+  background-repeat: no-repeat;
+}
+.container .password__assets .form__settings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .password__assets .form__settings .setting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=styles.css.map */
